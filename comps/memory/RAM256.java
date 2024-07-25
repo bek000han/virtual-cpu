@@ -1,15 +1,13 @@
 package comps.memory;
 
-import java.util.HashMap;
-
 public class RAM256 {
     private byte[][] matrix;
     private byte input;
-    private MARegister reference;
+    private SetOnlyRegister MAR;
 
-    public RAM256(MARegister reference) {
+    public RAM256(SetOnlyRegister MAR) {
         this.matrix = new byte[16][16];
-        this.reference = reference;
+        this.MAR = MAR;
     }
 
     public void set() {

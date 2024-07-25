@@ -1,33 +1,32 @@
 package main;
 
-import comps.ALU;
-import comps.Bus;
+import comps.arth_logic.ALUnit;
+import comps.arth_logic.Bus1;
 import comps.control.ControlUnit;
-import comps.memory.Accumulator;
-import comps.memory.FRegister;
-import comps.memory.GPRegister;
-import comps.memory.IARegister;
-import comps.memory.IRegister;
-import comps.memory.MARegister;
+import comps.memory.Bus;
+import comps.memory.GenericRegister;
 import comps.memory.RAM256;
-import comps.memory.TMPRegister;
+import comps.memory.SetOnlyRegister;
 
 public class BeckPC {
     private ControlUnit CU;
     private RAM256 RAM;
-    private ALU ALU;
-
-    private GPRegister R0;
-    private GPRegister R1;
-    private GPRegister R2;
-    private GPRegister R3;
-    
-    private MARegister MAR;
-    private Accumulator ACC;
-    private IARegister IAR;
-    private IRegister IR;
-    private TMPRegister TMP;
-    private FRegister FLAGS;
-
+    private ALUnit ALU;
     private Bus bus;
+
+    private GenericRegister R0;
+    private GenericRegister R1;
+    private GenericRegister R2;
+    private GenericRegister R3;
+
+    private GenericRegister ACC;
+    private GenericRegister IAR;
+
+    private SetOnlyRegister MAR;
+    private SetOnlyRegister FLAGS;
+    private SetOnlyRegister IR;
+    private SetOnlyRegister TMP;
+    
+    private Bus1 bus1;
+    
 }

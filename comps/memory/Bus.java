@@ -1,4 +1,4 @@
-package comps;
+package comps.memory;
 
 public class Bus {
     private byte data;
@@ -9,5 +9,9 @@ public class Bus {
     
     public void load(byte data){
         this.data = data;
+    }
+
+    public byte unload() {
+        return this.data;
     }
 }
