@@ -20,7 +20,7 @@ public class BeckComp {
     private GenericRegister R3;
 
     private GenericRegister ACC;
-    private GenericRegister IAR;
+    private GenericRegister PC;
 
     private SetOnlyRegister MAR;
     private SetOnlyRegister FLAGS;
