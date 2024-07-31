@@ -1,13 +1,13 @@
 package comps.memory;
 
-public class RAM128 {
+public class RAM256 {
     private byte[][] map;
     private byte input;
     private SetOnlyRegister MAR;
     private Bus bus;
 
-    public RAM128(SetOnlyRegister MAR, Bus bus) {
-        this.map = new byte[8][8];
+    public RAM256(SetOnlyRegister MAR, Bus bus) {
+        this.map = new byte[16][16];
         this.MAR = MAR;
         this.bus = bus;
     }

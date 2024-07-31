@@ -5,12 +5,12 @@ import comps.arth_logic.Bus1;
 import comps.control.ControlUnit;
 import comps.memory.Bus;
 import comps.memory.GenericRegister;
-import comps.memory.RAM128;
+import comps.memory.RAM256;
 import comps.memory.SetOnlyRegister;
 
 public class BeckComp {
     private ControlUnit CU;
-    private RAM128 RAM;
+    private RAM256 RAM;
     private ALUnit ALU;
     private Bus bus;
 

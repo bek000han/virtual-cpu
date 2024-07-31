@@ -3,11 +3,11 @@ package comps.control;
 import comps.arth_logic.ALUnit;
 import comps.arth_logic.Bus1;
 import comps.memory.GenericRegister;
-import comps.memory.RAM128;
+import comps.memory.RAM256;
 import comps.memory.SetOnlyRegister;
 
 public class ControlUnit {
-    private RAM128 RAM;
+    private RAM256 RAM;
     private ALUnit ALU;
 
     private GenericRegister R0;
